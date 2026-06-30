@@ -1,0 +1,23 @@
+@use "../../../styels/mixin" as *;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1488CC;
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color: white;
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    img{
+        width: 200px;
+    }
+    h5{
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

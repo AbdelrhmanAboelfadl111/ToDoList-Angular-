@@ -1,0 +1,18 @@
+.task{
+    background: linear-gradient(to right, #010893, #001b87);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 100%;
+    button {
+            background: linear-gradient(to right, #ffffff, #e4e4e4);
+            color: black;
+            outline: none;
+            border: none;
+            margin-left: auto;
+        }
+}

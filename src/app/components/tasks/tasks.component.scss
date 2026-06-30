@@ -1,0 +1,30 @@
+.container{
+    background: #1488CC;
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    .head{
+        margin-bottom: 20px;
+        button{
+            background: linear-gradient(to right, #ffffff, #e4e4e4);
+            color: black;
+            outline: none;
+            border: none;
+        }
+        h3{
+            font-size: 30px;
+            background: linear-gradient(to right, #010893, #001b87);
+            padding: 5px 30px;
+            border-radius: 0px 15px 15px 0px;
+        }
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+<div class="task">
+    <h3 class="mb-0">{{currentTask().title}}</h3>
+    <h6 class="mb-0">{{currentTask().data|date:'fullDate'}}</h6>
+    <p class="mb-0">{{currentTask().summary}}</p>
+    <button class="btn btn-danger" (click)="compeletTask(currentTask().id)">Done</button>
+</div>

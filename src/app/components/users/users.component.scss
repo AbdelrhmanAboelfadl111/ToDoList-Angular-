@@ -1,0 +1,33 @@
+.user{
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    background: #1488CC;
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        -webkit-box-shadow: -0.5px 0 20px -5.5px #000000;
+            -moz-box-shadow: -0.5px 0 20px -5.5px #000000;
+            box-shadow: -0.5px 0 20px -5.5px #000000;
+    }
+    &.active{
+        transform: scale(1.1);
+            -webkit-box-shadow: -0.5px 0 20px -5.5px #000000;
+            -moz-box-shadow: -0.5px 0 20px -5.5px #000000;
+            box-shadow: -0.5px 0 20px -5.5px #000000;
+    }
+    img{
+        width: 50px;
+    }
+    h3{
+        font-weight: 300;
+        font-size: 22px;
+        cursor: pointer;
+        
+    }
+}

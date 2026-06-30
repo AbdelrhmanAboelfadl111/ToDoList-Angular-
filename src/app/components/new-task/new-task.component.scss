@@ -1,0 +1,55 @@
+.pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(57, 57, 57, 0.484);
+    backdrop-filter: blur(2px);
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #1488CC;
+        background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+        background: linear-gradient(to right, #2B32B2, #1488CC);
+        width: 450px;
+        color: white;
+        padding: 15px;
+        border-radius: 15px;
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 90%;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+            input,textarea{
+                width: 100%;
+                margin: auto;
+                resize: none;
+                padding: 10px;
+                border-radius: 10px;
+                border: 0;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .ActionCon{
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 10px;
+            button{
+                padding: 7px 20px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+<div class="pop-up">
+    <div class="box">
+        <h2 class="my-2">Add Task</h2>
+        <form action="" (submit)="addTask(MyfORM)" #MyfORM="ngForm" ngForm class="w-100 d-flex justify-content-center align-items-center flex-column">
+            <div class="titleCon con">
+                <label for="title">Title</label>
+                <input type="text" name="title" #title="ngModel" ngModel required>
+            </div>
+            <div class="summaryCon con">
+                <label for="summary">Summary</label>
+                <textarea name="summary" id="summary" required #summary="ngModel" ngModel></textarea>
+            </div>
+            <div class="dateCon con">
+                <label for="date">Due Date</label>
+                <input type="date" name="data" required #date="ngModel" ngModel>
+            </div>
+            <div class="ActionCon con">
+                <button class="btn btn-danger" (click)="fire()">Cancel</button>
+                <button class="btn btn-success" type="submit">Add Task</button>
+            </div>
+        </form>
+    </div>
+</div>
