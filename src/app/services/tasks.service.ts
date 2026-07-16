@@ -19,14 +19,16 @@ export class TasksService {
         return this.tasks.filter((task) => task.userId == userId);
     }
 
-    public addTask(task:TaskInfoModle , userid:string) {
-        let newTask: TaskModel = {
-            id: new Date().getTime().toString(),
-            userId:userid,
-            ...task
-        };
-        this.tasks.push(newTask)
-    }
+    public addTask(task: TaskInfoModle, userid: string) {
+    const newTask: TaskModel = {
+        id: new Date().getTime().toString(),
+        userId: userid,
+        ...task
+    };
+
+    this.tasks.push(newTask);
+    this.updateLocalstorage();
+}
     public deleteTask(taskId: string) {
         this.tasks = this.tasks.filter(task => task.id !== taskId);
         this.updateLocalstorage();
